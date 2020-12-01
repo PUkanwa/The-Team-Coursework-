@@ -1,0 +1,545 @@
+
+
+
+echo "<form class='searchbar' action = '' method='POST'>";
+    echo'<input type="search" name="usersearch"  value=""> ';
+       echo'<input class="icon-search" name="search" type="submit" value="searchbar" >';
+   echo'</form>';
+ 
+
+
+
+  echo'<div class="dropdown-content">';
+                        echo '<li><a class= "dropdown-link" href="upcomingmovies.php">Upcoming Movies</a></li>';
+                        echo '<li><a class= "dropdown-link"  href="trailers.php">Trailers</a></li>';
+                        echo '<li><a class= "dropdown-link"  href="recommendations.php">Reccomendations</a></li>';
+                    echo '</div>';
+                echo '</div>';
+
+
+
+
+
+<table>
+        <tr>
+            <th> <h3> November </h3></th> 
+        </tr>
+        <tr>
+            <th>Sun</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thur</th> <th>Fri</th> <th>Sat</th>
+        </tr>
+        <tr>  
+            <td> <p>1</p>  
+            <div class="popup"> 
+                <h5>Dinner</h5>
+                
+                <div class="popup-content">
+                    <a href=#1> Dinner with us </a>
+                
+                </div>
+                
+            </div> 
+            </td> <td> <p>2</p></td> <td> <p>3</p></td> <td> <p>4</p></td> <td> <p>5</p></td> <td> <p>6</p></td> <td> <p>7</p></td>  
+        </tr>
+            
+        <tr> 
+            <td> <p>8</p> </td> <td> <p> 9</p></td> <td> <p> 10</p></td> <td> <p> 11</p></td> <td> <p> 12</p></td> <td> <p> 13</p></td> <td> <p> 14</p></td>
+        </tr>
+            
+        <tr> 
+            <td> <p>15</p></td> <td> <p>16</p></td> <td> <p>17</p></td> <td> <p>18</p></td> <td> <p>19</p></td> <td> <p>20</p></td> <td> <p>21</p></td>
+        </tr>
+            
+        <tr> 
+            <td> <p>22</p></td> <td> <p>23</p></td> <td> <p>24</p></td> <td> <p>25</p></td> <td> <p>26</p></td> <td> <p>27</p></td> <td> <p>28</p></td>
+        </tr>
+            
+        <tr> 
+            <td> <p>29</p></td> <td> <p>30</p></td> <td> </td> <td> </td> <td> </td> <td> </td> <td> </td>
+        </tr>
+        
+        </table>
+
+/* Horizontal Menu */
+
+nav{
+    background-color: #343434;
+    height: 7%;
+    display: block;
+    
+    
+}
+
+h3{margin: 0}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+    
+    
+}
+
+nav li{
+    float: left;
+    padding: 4px;
+    margin: 1%;
+   
+    
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    padding-bottom: 23px
+    
+    
+}
+
+.active{
+    background-color: #4E4D4D
+}
+
+nav li a:hover {
+    border: 2px solid #bbb;
+    
+}
+
+nav li:last-child {
+    float: right;
+    
+    
+}
+
+
+
+body{margin: 0}
+
+#slideshow{
+    display: block;
+    background-color: white;
+    height: 38%;
+    
+}
+
+.review-container {
+    display: flex;
+    background-color: #542C7C;
+    height: 48%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+
+}
+
+
+
+.review-container div {
+    background-color: #f1f1f1;
+    padding: 2%;
+    font-size: 30px;
+    margin: auto;
+    height: 55%;
+    width: 20%;
+    border-radius: 12px
+
+}
+#new-review{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    
+}
+
+#review-form{
+     width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block
+    
+}
+
+section img{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    display: block;
+    right: 35%
+}
+
+
+form{
+    color: white;
+    margin: auto;
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 310px;
+    right: 39%;
+    bottom: 14%
+    
+}
+
+form input{
+    margin-bottom: 31px;
+    width: 200px;
+    display: inline;
+    font-size: 14px;
+    border: none;
+    border-bottom: 5px solid rgba(0,0,0,1);
+    padding-left: 5px;
+    color: wheat;
+    background-color: black;
+        
+}
+input:focus{
+    border-bottom: 5px solid
+    
+}
+
+
+footer{
+    position: relative;
+    height: 7%;
+    background-color: #343434;
+    text-align: center;
+    bottom: 0;
+    
+}
+
+footer p{
+    
+    margin: 0;
+   
+}
+
+
+
+........
+
+    
+<aside id="events-aside">
+        
+
+<div class="filter-container">
+    
+    <h3> Search By:</h3>
+            
+    <h4> By name</h4>
+    
+   <form class="searchbar" action = 'filterevents.php' method='POST'>
+    <input type="search" name="search" > <br>
+       <input class="icon-search" type="submit" value="&#128269;" >
+   </form>
+    
+            
+    <h4> By month</h4>
+            
+    <form action="filterevents.php">
+        <select name="month" id="months">
+            <option value="1">January</option>
+            <option value="2">Feb</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+        <br><br>
+        <input type="submit" value="search">
+    </form>
+
+<h3>Filter results:</h3>
+
+
+<b>Event Type</b>
+   <form action = 'filterevents.php' method='POST'>
+
+    <input type="checkbox" id="slct1"  name='checked[]' value="campus">
+    <label for="slct3">On Campus</label>
+    <input type="checkbox" id="slct2"  name='checked[]' value="online">
+    <label for="slct1">Online</label><br>
+    <input type="checkbox" id="slct3"  name='checked[]' value="resturant">
+    <label for="slct2">Resturant</label><br>
+    <input type="checkbox" id="slct4"  name='checked[]' value="cinema">
+    <label for="slct3">Cinema</label>
+    <input type='hidden' name='search' value='checkbox' >
+    <input type='submit' name='submit'  value='Submit' >
+
+   </form>
+        
+        
+        </div>
+        
+        
+    </aside>
+
+
+ echo '<div class="dropdown">';
+                    echo'<span >Movies</span>';
+                    echo'<div class="dropdown-content">';
+                        echo '<li><a class= "dropdown-link" href="testimonial.php">Upcoming Movies</a></li>';
+                        echo '<li><a class= "dropdown-link"  href="#joinus">Trailers</a></li>';
+                        echo '<li><a class= "dropdown-link"  href="#joinus">Reccomendations</a></li>';
+                    echo '</div>';
+echo '</div>';
+
+
+
+  <div class="rating" >
+
+                    <span class="rates"><input type="radio" name="rating" id="str5" value="5"><label for="str5">5</label></span>
+                    <span class="rates"><input type="radio" name="rating" id="str4" value="4"><label for="str4">4</label></span>
+                    <span class="rates"><input type="radio" name="rating" id="str3" value="3"><label for="str3">3</label></span>
+                    <span class="rates"><input type="radio" name="rating" id="str2" value="2"><label for="str2">2</label></span>
+                    <span class="rates"><input type="radio" name="rating" id="str1" value="1"><label for="str1">1</label></span>
+
+                </div>
+
+
+
+#events #display-events{
+    margin-left: 210px;
+        position: absolute;
+    
+}
+
+
+
+.events{
+    
+    position: relative;
+    width: 100%;
+    background-color: aliceblue;
+
+}
+.events #events-aside{
+    
+    background-color: red;
+    padding-left: 70px;
+    position: relative;
+    width: 22%;
+   
+}
+
+
+.events #event-container{
+position: absolute;
+    width: 60%;
+   float: right;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-left: 390px;         
+}
+
+.events #events-list {
+    position: relative;
+     width: 60%;
+    float: right;
+    height: 60px
+    
+}
+
+.filter-container{
+    display: block;
+    margin-left: 5%;
+    position: absolute;
+    padding: 5%;
+  min-width: 80%;
+    min-height: 40%;
+  box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.2);
+    border-radius: 10px
+
+    
+}
+
+
+
+.......
+
+
+
+
+#review-form{
+    position: relative;
+    width: 560px;
+    height: 360px;
+    margin: auto;
+    padding-bottom: 20px;
+    display: block;
+    border: 2px solid black
+    
+}
+
+#new-review form{
+    position: absolute;
+    padding-top: 30px;
+    padding-right: 30px;
+    color: black;
+    display: block;
+    margin: auto;
+    height: 90%;
+    width: 100%;
+    
+
+    
+}
+
+#new-review form input{
+    width: 100%;
+    display: block;
+    font-size: 22px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,1);
+    padding: 1px;
+    color: darkred;
+   
+        
+}
+#new-review input:focus{
+    border-bottom: 5px solid
+    
+}
+
+#review-form input[type=submit]{
+    display: block;
+    margin: 0 auto;
+    padding: 0 2px;
+    background-color: blue;
+    letter-spacing: 2px;
+    transition: .2s all ease-in-out;
+    outline: none;
+    border: 1px solid rgba(0,0,0,1);
+    box-shadow: 3px 3px 1px 
+
+}
+
+#new-review input[type=submit]:hover{
+
+    background-color: red;
+    transition: .2s all ease-in-out;
+
+}
+
+
+
+
+
+#main-menu{
+    background-color: #343434;
+    height: 55px;
+    display: block;
+    
+}
+
+
+#main-menu ul{
+    margin: 0;
+    padding: 0;     
+}
+
+#main-menu li a:not(.dropdown-link), span:not(.current){
+    color: white;
+        
+}
+
+
+#main-menu li:not(.dropdown-link), span:not(.rates){
+
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    float: left;
+     
+}
+
+
+.current{
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    border-bottom: 4px solid white;
+   
+}
+
+#main-menu li:hover{
+
+    border-bottom: 4px solid purple;
+    
+}
+
+#main-menu li:last-child {
+    float: right;
+}
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.dropdown {
+    margin-right: 100px!important;
+}
+
+
+.dropdown span:hover{
+    border-bottom: 4px solid purple;
+    
+}
+
+.dropdown a{
+    color: black;
+    text-align: center;
+}
+
+.dropdown-link{
+    display: block;
+    color: white;   
+}
+
+.dropdown-content li:hover{
+    background-color: #bbb;
+    border: none;
+    
+}
+
+.dropdown-content li{
+    
+    width: 100%;
+    text-align: center;
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-top: 55px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color:  white;
+    
+}
+
+
